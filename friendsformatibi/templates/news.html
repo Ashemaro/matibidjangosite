@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="">
+        <h1 class="sitename">FriendsForMatibi</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="ongoingprojects.html">Ongoing Projects</a></li>
+              <li><a href="projectstofund.html">Projects To Fund</a></li>
+              <li><a href="completedprojects.html">Completed Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'news' %}" class="active">News</a></li>
+          <li><a href="{% url 'nookhubactivities' %}">Nook Hub</a></li>
+          <li><a data-bs-toggle="modal" data-bs-target="#ModalForm" class="active">Become a Member</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+{% endblock header %}
+
+
+
+ {% block page_content %}
+<!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url('{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}');">
+      <div class="container position-relative">
+        <h1>NEWS UPDATES</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+{% endblock page_content %}
