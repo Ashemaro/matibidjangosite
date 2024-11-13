@@ -16,9 +16,9 @@
           <li><a href="{% url 'about' %}">About</a></li>
           <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="ongoingprojects.html">Ongoing Projects</a></li>
-              <li><a href="projectstofund.html">Projects To Fund</a></li>
-              <li><a href="completedprojects.html">Completed Projects</a></li>
+              <li><a href="{% url 'runningprojects' %}">Ongoing Projects</a></li>
+              <li><a href="{% url 'projectstofund' %}">Projects To Fund</a></li>
+              <li><a href="{% url 'completedprojects' %}">Completed Projects</a></li>
             </ul>
           </li>
           <li><a href="{% url 'news' %}">News</a></li>
