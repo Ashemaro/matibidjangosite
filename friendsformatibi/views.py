@@ -14,19 +14,13 @@ def projects(request):
     return render(request, 'projects.html')
 
 
-def nookhub(request):
-    return render(request, 'nookhub.html')
-
-
-def news(request):
-    return render(request, 'news.html')
-
-
 def runningprojects(request):
     return render(request, 'runningprojects.html')
 
+
 def projectstofund(request):
     return render(request, 'projectstofund.html')
+
 
 def completedprojects(request):
     return render(request, 'completedprojects.html')

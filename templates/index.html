@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'sitebase.html' %}
 {% load static %}
 
 {% block header %}
@@ -13,16 +13,16 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'friendsformatibi:about' %}">About</a></li>
           <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="{% url 'runningprojects' %}">Ongoing Projects</a></li>
-              <li><a href="{% url 'projectstofund' %}">Projects To Fund</a></li>
-              <li><a href="{% url 'completedprojects' %}">Completed Projects</a></li>
+              <li><a href="{% url 'friendsformatibi:runningprojects' %}">Ongoing Projects</a></li>
+              <li><a href="{% url 'friendsformatibi:projectstofund' %}">Projects To Fund</a></li>
+              <li><a href="{% url 'friendsformatibi:completedprojects' %}">Completed Projects</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'news' %}">News</a></li>
-          <li><a href="{% url 'nookhubactivities' %}">Nook Hub</a></li>
+          <li><a href="{% url 'matibisiteblog:news' %}">News</a></li>
+          <li><a href="{% url 'matibisiteblog:nookhubactivities' %}">Nook Hub</a></li>
           <li><a data-bs-toggle="modal" data-bs-target="#ModalForm" class="active">Become a Member</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
